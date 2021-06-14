@@ -28,11 +28,19 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+
+  counter 1 has block/function level scopes and variables (i.e. the variable count and the function counter()) where as counter2 has global level scope, functions and variables (i.e. all the code - the variable "count", function " counter2()")
+
   2. Which of the two uses a closure? How can you tell?
-  
+
+  counter1 is definitely a closure as it has function inside a function calling a variable in the function outside of it where it is nested. What is happening is, the function "counter()" is calling the variable "count" which is inside the function "countermaker()" but outside itself (i.e. fucntion "counter()").
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+counter1 code is preferrable when you want to have secret variables and/or just want to have less problems when writing multiple lines of codes because you won't have any of the components of the block level scope (ie the variables and functions inside the global function -- in this case function "countermaker()").
+counter2 code is preferrable when you do want to have that code available through the entirety of the window or your program so that other functions, devs or user can call those functions and variables you declared in that global scope
+
 */
 
 // counter1 code
