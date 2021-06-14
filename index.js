@@ -89,17 +89,36 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
-}
+// function numInnings(inningCB){
+//  return{
+//   Home: inningCB(),
+//   Away: inningCB()
+//  }
+// }
+
+
+function finalScore(){
+//   let final = {}
+//   let scoreHome = 0;
+//   let scoreAway = 0;
+//   for(let i = 0; i < numInnings; i++){
+//     const currentScore = numInnings(inningCB);
+//     scoreHome = scoreHome + currentScore.Home
+//     awayScore = awayScore + currentScore.Away
+//     totalGame.push(`Period ${i + 1},: Away: ${currentScore.Away} - Home: ${currentScore.Home}`);
+//   }
+//   return final
+// };
+//  console.log('task 3', finalScore(inning, 9))
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore(functionCB) {
+  return { "Home": inningCB2, "Away": inningCB2
+}
 }
 
 
