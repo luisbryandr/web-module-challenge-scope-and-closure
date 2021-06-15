@@ -167,8 +167,11 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
+function scoreboard(getInningScoreCB, inningCB, numInnings) {
   /* CODE HERE */
+  //will need if and else statements for the results of either a tie or win where it takes the sum of all the away scores and compares them to all the scores of the home game
+  // will need to type in string and $[] to call the parameters in the function body, specifically inside the array
+  return []
 }
 
 
