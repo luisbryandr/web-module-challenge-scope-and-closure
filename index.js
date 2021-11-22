@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+       Counter 1 uses a nested function to reach out to the outer function's variable.  the variable is in function level scope.  Counter 2 uses closure to reach outside of itself and out to global level scope to use the variable declared globally inside the function.
   2. Which of the two uses a closure? How can you tell?
-  
+      Counter 2 uses closer because it reaches out to global level from inside function level. 
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     counter 1 code would be betterwhen you want the count to reset itself each time the function is called.
+     counter 2 code would be better when youwant to alter the count variable globally and work with its alteration elsewhere in your program
 */
 
 // counter1 code
@@ -63,9 +66,9 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(/*Code Here*/){
-    /*Code Here*/
+    return Math.floor(Math.random()*2);
 }
-
+console.log('task 2', inning());
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
